@@ -87,13 +87,6 @@ class puppet::params {
   $agent                     = true
   $remove_lock               = true
 
-  # Custom puppetmaster
-  if defined('$trusted') and $::trusted['authenticated'] == 'local' {
-    $puppetmaster            = undef
-  } else {
-    $puppetmaster            = $::puppetmaster
-  }
-
   # Hashes containing additional settings
   $additional_settings   =      {}
   $agent_additional_settings  = {}

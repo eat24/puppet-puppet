@@ -413,7 +413,7 @@ class puppet (
   $client_package                = $puppet::params::client_package,
   $agent                         = $puppet::params::agent,
   $remove_lock                   = $puppet::params::remove_lock,
-  $puppetmaster                  = $puppet::params::puppetmaster,
+  $puppetmaster                  = undef,
   $service_name                  = $puppet::params::service_name,
   $syslogfacility                = $puppet::params::syslogfacility,
   $server                        = $puppet::params::server,
